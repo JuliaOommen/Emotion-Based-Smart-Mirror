@@ -33,6 +33,8 @@ emotion_smart_mirror/
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 
+---
+
 ## 🛠️ Installation
 
 ### Install dependencies
