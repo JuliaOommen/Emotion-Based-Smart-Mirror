@@ -52,8 +52,10 @@ http://localhost:5000
 CNN-based emotion classifier trained on labeled facial expression datasets.
 
 Recognizes the following emotions:
-😠 Angry
-😀 Happy
-😢 Sad
-😐 Neutral
+
+- 😠 Angry
+- 😀 Happy
+- 😢 Sad
+- 😐 Neutral
+  
 Model file: emotion_model.h5
