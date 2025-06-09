@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Island</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+        /* Full Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url("static/wallpapers/funisland.jpeg") no-repeat center center;
+            background-size: contain; /* Ensures full image fits */
+            background-color: black; /* Fills extra space */
+            overflow: hidden; /* Prevents scrolling */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Container for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Individual Card Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent look */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            color: white;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body class="fun-island">
+
+    <h1>🎉 Welcome to Fun Island! 🎉</h1>
+
+    <div class="grid-container">
+        <!-- Card 1: Watch Funny Videos -->
+        <div class="card" onclick="window.open('https://www.youtube.com/results?search_query=funny+videos', '_blank')">
+            <div class="card-content">
+                <h3>🤣 Funny Videos</h3>
+                <p>Laugh out loud with a collection of hilarious videos.</p>
+            </div>
+        </div>
+
+        <!-- Card 2: Play an Online Game -->
+        <div class="card" onclick="window.open('https://skribbl.io/', '_blank')">
+            <div class="card-content">
+                <h3>🎮 Online Games</h3>
+                <p>Challenge friends or strangers in exciting online games.</p>
+            </div>
+        </div>
+
+        <!-- Card 3: Listen to Happy Music -->
+        <div class="card" onclick="window.open('https://www.spotify.com', '_blank')">
+            <div class="card-content">
+                <h3>🎵 Happy Music</h3>
+                <p>Boost your mood with uplifting and cheerful tunes.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

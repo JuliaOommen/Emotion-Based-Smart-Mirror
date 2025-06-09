@@ -1,0 +1,145 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Landing Page Styling */
+body.landing {
+    background: url("/static/wallpapers/landing1.jpeg") no-repeat center center fixed;
+    background-size: contain; /* Ensures the full image is visible */
+    background-position: center;
+    background-color: black; /* Fills extra space if needed */
+}
+
+
+/* Express Yourself Page */
+body.express-yourself {
+    font-family: Arial, sans-serif;
+    background: url("/static/wallpapers/express_yourself.jpeg") no-repeat center center fixed;
+    background-size: contain; /* Fit image entirely */
+    background-color: black;  /* Fill extra space */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Fun Island Page */
+body.fun-island {
+    background: url("/static/wallpapers/fun.jpeg") no-repeat center center fixed;
+    background-size: contain; /* Ensures the full image is visible */
+    background-color: black; /* Fill extra space */
+}
+
+
+/* Container for Fun Island Boxes */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* Fun Island Boxes */
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.6), rgba(70, 130, 180, 0.6)); /* bluish lurple */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    backdrop-filter: blur(5px); /* optional glassy effect */
+    box-shadow: 0 4px 20px rgba(138, 43, 226, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, rgba(70, 130, 180, 0.7), rgba(138, 43, 226, 0.7)); /* reverse glow */
+    box-shadow: 0 6px 25px rgba(138, 43, 226, 0.6);
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.5); /* darker transparent background for contrast */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.card-content p {
+    font-size: 14px;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px black;
+}
